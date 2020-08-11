@@ -1,0 +1,16 @@
+# https://www.codewars.com/kata/523f5d21c841566fde000009/solutions/python
+# Code Explaination
+
+# I use the first loop to iterate over the same length of the first list because that is the most important factor for removal
+# The second loop iterates over the second list values will be used to compare
+# The third loop iterates over the first list which 
+# then I compare whether the item of list 1 is equal to the item in list 2
+# if so I then remove the matching item from the first list
+
+def array_diff(a, b):
+    for i in range(len(a)):
+        for j in b:
+            for k in a:
+                if(j == k):
+                    a.remove(j)
+    return a
